@@ -1,5 +1,5 @@
 body {
-  background-color: #f9f7fe;
+  background-color: #dddddd;
   font-family: sans-serif;
 }
 
@@ -34,7 +34,7 @@ img {
   padding-top: 10px;
   padding: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .city {
