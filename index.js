@@ -37,14 +37,14 @@ function updateTime() {
     );
   }
 
-  let japanElement = document.querySelector("#japan");
-  if (japanElement) {
-    let japanDateElement = japanElement.querySelector(".date");
-    let japanTimeElement = japanElement.querySelector(".time");
-    let japanTime = moment().tz("Japan");
+  let seoulElement = document.querySelector("#seoul");
+  if (seoulElement) {
+    let seoulDateElement = seoulElement.querySelector(".date");
+    let seoulTimeElement = seoulElement.querySelector(".time");
+    let seoulTime = moment().tz("Asia/Seoul");
 
-    japanDateElement.innerHTML = japanTime.format("MMMM	Do YYYY");
-    japanTimeElement.innerHTML = japanTime.format(
+    seoulDateElement.innerHTML = seoulTime.format("MMMM	Do YYYY");
+    seoulTimeElement.innerHTML = seoulTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
