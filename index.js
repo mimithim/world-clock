@@ -25,6 +25,18 @@ function updateTime() {
     );
   }
 
+  let perthElement = document.querySelector("#perth");
+  if (perthElement) {
+    let perthDateElement = perthElement.querySelector(".date");
+    let perthTimeElement = perthElement.querySelector(".time");
+    let perthTime = moment().tz("Australia/Perth");
+
+    perthDateElement.innerHTML = perthTime.format("MMMM	Do YYYY");
+    perthTimeElement.innerHTML = perthTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
   let japanElement = document.querySelector("#japan");
   if (japanElement) {
     let japanDateElement = japanElement.querySelector(".date");
